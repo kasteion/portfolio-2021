@@ -1,10 +1,11 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import Layout from "../components/Layout";
 
 // markup
 const NotFoundPage = () => {
   return (
-    <main>
+    <Layout>
       <h1>This is not the page you are looking for...</h1>
       <p>
         Sorry{" "}
@@ -23,7 +24,7 @@ const NotFoundPage = () => {
         <br />
         <Link to="/">Go home</Link>.
       </p>
-    </main>
+    </Layout>
   );
 };
 

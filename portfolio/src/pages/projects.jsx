@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const IndexPage = () => {
+const ProjectsPage = () => {
   return (
     <Layout>
       <h1>
-        Index{" "}
+        Projects{" "}
         <span role="img" aria-label="Rock'n Roll">
           🤘
         </span>
@@ -14,4 +14,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default ProjectsPage;

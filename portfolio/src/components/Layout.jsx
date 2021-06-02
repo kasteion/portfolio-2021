@@ -28,10 +28,11 @@ const Wrapper = styled.div`
 const Main = styled.main`
   grid-column: 2/3;
   grid-row: 2/3;
-  // @media (max-width: 768px) {
-  //   grid-column: 1;
-  //   grid-row: 2/3;
-  // }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 `;
 
 // const Footer = styled.footer`

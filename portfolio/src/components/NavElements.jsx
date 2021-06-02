@@ -115,7 +115,9 @@ const NavElements = () => {
   return (
     <>
       <Logo>
-        <GatsbyImage image={logo} alt="Logo" />
+        <Link to="/">
+          <GatsbyImage image={logo} alt="Logo" />
+        </Link>
       </Logo>
       <Avatar>
         <GatsbyImage image={image} alt={name} />

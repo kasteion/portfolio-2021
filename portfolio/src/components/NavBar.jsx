@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import { colors } from "../utils/colors";
 import NavElements from "./NavElements";
 
@@ -114,7 +114,9 @@ const NavBar = () => {
       </Nav>
       <ResponsiveNav>
         <ResponsiveNavDiv>
-          <GatsbyImage image={image} alt="Logo" />
+          <Link to="/">
+            <GatsbyImage image={image} alt="Logo" />
+          </Link>
           <HamburgerButton onClick={toogleShow}>
             <div></div>
             <div></div>
