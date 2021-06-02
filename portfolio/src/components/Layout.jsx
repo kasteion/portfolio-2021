@@ -12,22 +12,36 @@ const Wrapper = styled.div`
   overflow-y: hidden;
   font-family: -apple-system, Roboto, sans-serif, serif;
   background-color: ${colors.white};
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
-const Header = styled.header`
-  grid-column: 2/3;
-  grid-row: 1/2;
-`;
+// const Header = styled.header`
+//   display: none;
+//   @media (max-width: 768px) {
+//     display: block;
+//   }
+// `;
 
 const Main = styled.main`
   grid-column: 2/3;
   grid-row: 2/3;
+  // @media (max-width: 768px) {
+  //   grid-column: 1;
+  //   grid-row: 2/3;
+  // }
 `;
 
-const Footer = styled.footer`
-  grid-column: 2/3;
-  grid-row: 3/4;
-`;
+// const Footer = styled.footer`
+//   grid-column: 2/3;
+//   grid-row: 3/4;
+//   @media (max-width: 768px) {
+//     grid-column: 1;
+//     grid-row: 4/5;
+//   }
+// `;
 
 const Layout = ({ children }) => {
   return (
@@ -41,9 +55,7 @@ const Layout = ({ children }) => {
         `}
       />
       <NavBar></NavBar>
-      <Header></Header>
       <Main>{children}</Main>
-      <Footer></Footer>
     </Wrapper>
   );
 };
