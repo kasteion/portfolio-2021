@@ -57,26 +57,11 @@ const List = styled.ul`
 //   }
 // `;
 
-const NamePink = styled.p`
-  font-weight: bold;
-  font-size: 1.3em;
-  color: ${colors.pink};
-
-  @media (max-height: 300px) {
-    display: none;
-  }
-`;
-
-const NameYellow = styled.p`
+const Name = styled.p`
   font-weight: bold;
   font-size: 1.3em;
   color: ${colors.yellow};
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 1px;
-  top: -45px;
-  left: 2px;
+  text-shadow: -3px 0 0 ${colors.pink};
   @media (max-height: 300px) {
     display: none;
   }
@@ -122,8 +107,7 @@ const NavElements = () => {
       <Avatar>
         <GatsbyImage image={image} alt={name} />
       </Avatar>
-      <NamePink>Fredy Castellón</NamePink>
-      <NameYellow>Fredy Castellón</NameYellow>
+      <Name>Fredy Castellón</Name>
       <List>
         <li>
           <Link to="/">Home</Link>

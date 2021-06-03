@@ -11,19 +11,11 @@ const Wrapper = styled.div`
   grid-template-rows: 1pc auto 1pc;
   overflow-y: hidden;
   font-family: -apple-system, Roboto, sans-serif, serif;
-  background-color: ${colors.white};
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }
 `;
-
-// const Header = styled.header`
-//   display: none;
-//   @media (max-width: 768px) {
-//     display: block;
-//   }
-// `;
 
 const Main = styled.main`
   grid-column: 2/3;
@@ -32,8 +24,15 @@ const Main = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
 `;
+
+// const Header = styled.header`
+//   display: none;
+//   @media (max-width: 768px) {
+//     display: block;
+//   }
+// `;
 
 // const Footer = styled.footer`
 //   grid-column: 2/3;
@@ -52,6 +51,7 @@ const Layout = ({ children }) => {
           body {
             margin: 0;
             padding: 0;
+            background-color: ${colors.white};
           }
         `}
       />
