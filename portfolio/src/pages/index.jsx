@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import styled from "@emotion/styled";
 import { colors } from "../utils/colors";
+import { CenteredContainer } from "../components/ComponentsForPages";
 
 const Title = styled.h1`
   text-align: center;
@@ -33,16 +34,18 @@ const IndexPage = () => {
           d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
         ></path>
       </svg> */}
-      <Title>
-        Hi,
-        <span role="img" aria-label="Hand Wave">
-          👋
-        </span>
-        <br />
-        my name is <Name>Fredy Castellón</Name>
-        <br />
-        and i'm a <Profession>Software Developer</Profession>
-      </Title>
+      <CenteredContainer>
+        <Title>
+          Hi,
+          <span role="img" aria-label="Hand Wave">
+            👋
+          </span>
+          <br />
+          my name is <Name>Fredy Castellón</Name>
+          <br />
+          and i'm a <Profession>Software Developer</Profession>
+        </Title>
+      </CenteredContainer>
     </Layout>
   );
 };

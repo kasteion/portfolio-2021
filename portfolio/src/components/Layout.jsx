@@ -8,8 +8,7 @@ import NavBar from "./NavBar";
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 15pc auto;
-  grid-template-rows: 1pc auto 1pc;
-  overflow-y: hidden;
+  // overflow-y: hidden;
   font-family: -apple-system, Roboto, sans-serif, serif;
   @media (max-width: 768px) {
     display: flex;
@@ -19,20 +18,19 @@ const Wrapper = styled.div`
 
 const Main = styled.main`
   grid-column: 2/3;
-  grid-row: 2/3;
+  //height: 95vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 95vh;
 `;
 
-// const Header = styled.header`
-//   display: none;
-//   @media (max-width: 768px) {
-//     display: block;
-//   }
-// `;
+const Header = styled.header`
+  grid-column: 2/3;
+  grid-row: 1/2;
+  height: 60px;
+  // background-color: ${colors.dark};
+`;
 
 // const Footer = styled.footer`
 //   grid-column: 2/3;
@@ -56,6 +54,7 @@ const Layout = ({ children }) => {
         `}
       />
       <NavBar></NavBar>
+      <Header />
       <Main>{children}</Main>
     </Wrapper>
   );

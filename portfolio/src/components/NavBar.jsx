@@ -8,9 +8,11 @@ import NavElements from "./NavElements";
 const Nav = styled.nav`
   background-color: ${colors.dark};
   color: ${colors.white};
-  height: 100vh;
   grid-column: 1/2;
   grid-row: 1/4;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
