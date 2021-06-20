@@ -1,0 +1,39 @@
+{
+  "skills": [
+    {
+      "id": 0,
+      "title": "ReactJS",
+      "description": "If you need an interactive web application i can help you build one using ReactJS.",
+      "imageName": "react",
+      "imagePosition": "left"
+    },
+    {
+      "id": 1,
+      "title": "NodeJS",
+      "description": "Or maybe it's a backend what you need. Then i can build an API with NodeJS and ExpressJS.",
+      "imageName": "nodejs",
+      "imagePosition": "right"
+    },
+    {
+      "id": 2,
+      "title": "MongoDB",
+      "description": "If you have a backend with NodeJS you may need to save your data using the MongoDB non-relational database.",
+      "imageName": "mongodb",
+      "imagePosition": "left"
+    },
+    {
+      "id": 3,
+      "title": "C#",
+      "description": "Maybe you have a project in mind where you need to use the famous .NET framework. Then i can build something for you using C#.",
+      "imageName": "csharp",
+      "imagePosition": "right"
+    },
+    {
+      "id": 4,
+      "title": "Microsoft SQL Server",
+      "description": "Perhaps you are more of a relational database person. Then I could help you with your data using Microsoft SQL Server.",
+      "imageName": "mssql",
+      "imagePosition": "left"
+    }
+  ]
+}

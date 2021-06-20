@@ -10,7 +10,10 @@ const ContactPage = () => {
   return (
     <Layout>
       <Title>Contact</Title>
-      <Article>Here i will put a contact form...</Article>
+      <Article>
+        This is a work in progress so i dont have any contact form yet... i will
+        have one shortly.
+      </Article>
       <HorizontalRule />
     </Layout>
   );

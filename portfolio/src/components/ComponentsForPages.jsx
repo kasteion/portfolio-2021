@@ -23,7 +23,6 @@ export const Article = styled.article`
   color: ${colors.dark};
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   section {
     padding: 20px;
   }
@@ -33,6 +32,10 @@ export const Article = styled.article`
   }
 `;
 
+export const CardContainer = styled.div`
+  padding: 20px;
+  color: ${colors.dark};
+`;
 export const HorizontalRule = styled.hr`
   width: 30%;
 `;
