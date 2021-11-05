@@ -1,4 +1,6 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import {
   Title,
@@ -7,9 +9,30 @@ import {
   Article,
   HorizontalRule,
   Button,
+  Avatar,
 } from "../components/ComponentsForPages";
 
 const AboutPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter: { name: { in: ["Avatar"] } }) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              gatsbyImageData(
+                width: 200
+                formats: [AUTO, WEBP, AVIF]
+                placeholder: BLURRED
+              )
+            }
+          }
+        }
+      }
+    }
+  `);
+  const avatarImage = getImage(data.allFile.edges[0].node);
+
   return (
     <Layout>
       <Title>About Me</Title>
@@ -26,15 +49,7 @@ const AboutPage = () => {
           and bring their ideas to life. Take a look at the things I can do and
           let's see if we can work together on your new project.
         </section>
-        <section>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, at.
-          Officia hic similique recusandae assumenda dolores a error
-          consequatur, iure provident laudantium possimus, rem quidem, quod
-          facere quibusdam fugiat doloribus? Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Numquam, harum nulla vero similique eum
-          fugiat animi voluptatibus, architecto illum laudantium incidunt
-          temporibus itaque modi veritatis nam? Cumque error corporis impedit!
-        </section>
+        <GatsbyImage image={avatarImage} alt="Avatar" />
       </Article>
       <HorizontalRule />
       <Article>

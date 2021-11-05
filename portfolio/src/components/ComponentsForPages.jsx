@@ -23,6 +23,11 @@ export const Article = styled.article`
   color: ${colors.dark};
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   section {
     padding: 20px;
   }
